@@ -18,14 +18,16 @@ Set as a dep in your mix.exs and ensure it is running with your app:
       # ...
     ]
   end
-  
+ 
   defp deps do
     [
       {:phoenix, "0.4.1"},
       {:cowboy, "~> 1.0.0"},
-      # ...
-      {:exrecaptcha, github: "adanselm/exrecaptcha"}
+      #...
+      {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.0"},
+      {:exrecaptcha, "~> 0.0.1"}
     ]
+  end
 ```
 
 And fetch your project's dependencies:
