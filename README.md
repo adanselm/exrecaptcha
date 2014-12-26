@@ -18,14 +18,14 @@ Set as a dep in your mix.exs and ensure it is running with your app:
       # ...
     ]
   end
- 
+
   defp deps do
     [
-      {:phoenix, "0.4.1"},
+      {:phoenix, "0.5.0"},
       {:cowboy, "~> 1.0.0"},
       #...
       {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.0"},
-      {:exrecaptcha, "~> 0.0.1"}
+      {:exrecaptcha, "~> 0.0.3"}
     ]
   end
 ```
@@ -85,7 +85,13 @@ end
 
 - No option for recaptcha display can be set yet
 - Error handling is quite inexistent (throws RuntimeError)
-- No tests (if you have an idea how I can test that, I'm all ears)
+- No tests
+
+## Changelog
+
+- 0.0.3: Update HTTPotion dependency, avoiding elixir version warnings
+- 0.0.2: Use HTTPS by default
+- 0.0.1: Initial release
 
 ## Licensing
 Copyright © 2014 [Adrien Anselme](https://github.com/adanselm) and [contributors](https://github.com/adanselm/exrecaptcha/graphs/contributors)
